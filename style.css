@@ -1,0 +1,59 @@
+.convert {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
+
+textarea {
+  width: 40%;
+  height: calc(100vh - 95px);
+  resize: vertical;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+textarea#result {
+  background-color: #f1f1f1;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 4px 0;
+  min-width: 100px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#clear {
+  background-color: #e74c3c;
+}
+
+footer {
+  text-align: center;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .convert {
+    flex-direction: column;
+  }
+
+  textarea {
+    width: 95%;
+  }
+}
